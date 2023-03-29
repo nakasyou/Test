@@ -29,6 +29,7 @@ export async function post({ settings, html, file, yaml }: postArgs){
   }} />;
   return layout(<div>
     <Header settings={settings}/>
+    <a href="/" class="back-to-home">←&nbsp;Back</a>
     {letter}
   </div>)
 }
