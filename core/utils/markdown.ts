@@ -4,9 +4,9 @@ const ymlRegex = /---\n[\s\S]*\n---/;
 import { parse } from "https://deno.land/std/encoding/yaml.ts";
 
 export function getYml(md: string): Record<string, any> {
-  md=md.replace("\r\n","\n");
+  md=md.replaceAll("\r\n","\n");
   const lines = md.split("\n");
-  console.log(lines)
+  console.log([lines[0]],line[0]!=="---")
   if (lines[0] !== "---") return {};
   const index = lines.slice(1).indexOf("---") + 1;
   if (index === 0) return {};
