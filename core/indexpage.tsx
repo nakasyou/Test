@@ -29,13 +29,15 @@ export default async function(){
     <ul>
       {
         datas.map(post=>{
-          return <li>
-            <span>{
+          return <li class="post-about">
+            <span class="post-date">{
               post.date
             }</span>
             <a href={
               `./posts/${post.name}`
-            }>{
+            }
+              class="post-title"
+              >{
               post.title
             }</a>
           </li>
