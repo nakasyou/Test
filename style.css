@@ -22,3 +22,7 @@ html,body{
   object-fit: cover;
   border-radius:50%;
 }
+.post-list{
+  width: fit-content;
+  margin: auto;
+}
