@@ -8,7 +8,6 @@ import { getYml } from "./utils/markdown.ts";
 
 async function dataplus(datas,file){
   const text=await Deno.readTextFile(file.path);
-  console.log(text)
   const { data }=getYml(text);
   datas.push({
     date: data.date,
