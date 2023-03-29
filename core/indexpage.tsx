@@ -24,7 +24,7 @@ export default async function(){
     asyncs.push(dataplus(datas,file));
   }
   await Promise.all(asyncs);
-  data.sort((a,b)=>(a.key<b.key) ? 1 : -1);
+  datas.sort((a,b)=>(a.key<b.key) ? 1 : -1);
   const jsx=<div>
     <ul>
       {
