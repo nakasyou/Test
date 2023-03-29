@@ -3,7 +3,7 @@
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import layout from "./layout.tsx";
 import config from "../blagin.config.ts";
-import { expandGlobSync } from "https://deno.land/std@0.181.0/fs/expand_glob.ts";
+import { expandGlob } from "https://deno.land/std@0.181.0/fs/expand_glob.ts";
 import { getYml } from "./utils/markdown.ts";
 
 async function dataplus(datas,file){
@@ -19,7 +19,7 @@ async function dataplus(datas,file){
 export default async function(){
   const datas=[];
   const asyncs=[];
-  for(const file of expandGlobSync("./posts/*.md")){
+  for await (const file of expandGlob("./posts/*.md")){
     if(!file.isFile)return;
     asyncs.push(dataplus(datas,file));
   }
