@@ -26,3 +26,12 @@ html,body{
   width: fit-content;
   margin: auto;
 }
+.post-link{
+  margin-right: 2px;
+}
+.post-title{
+  margin-left: 2px;
+}
+.post-about{
+  margin: 3px auto;
+}
