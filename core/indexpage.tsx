@@ -1,0 +1,52 @@
+/** @jsx h */
+/** @jsxFrag Fragment */
+import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
+import layout from "./layout.tsx";
+import config from "../blagin.config.ts";
+import { expandGlobSync } from "https://deno.land/std@0.181.0/fs/expand_glob.ts";
+import { getYml } from "./utils/markdown.ts";
+
+async function dataplus(datas,file){
+  const text=await Deno.readTextFile(file.path);
+  const { data }=getYml(text);
+  datas.push({
+    date: data.date,
+    title: data.title,
+    key: data.key,
+    name: file.name.replace(".md",""),
+  })
+}
+export default async function(){
+  const datas=[];
+  const asyncs=[];
+  for(const file of expandGlobSync("./posts/*.md")){
+    if(!file.isFile)return;
+    asyncs.push(dataplus(datas,file));
+  }
+  datas.sort((a,b)=>{
+    console.log(a.key,b.key)
+    if(a.key>b.key) return 1;
+    if(a.key<b.key) return -1;
+    return 0;
+  });
+  await Promise.all(asyncs);
+  const jsx=<div>
+    <ul>
+      {
+        datas.map(post=>{
+          return <li>
+            <span>{
+              post.date
+            }</span>
+            <a href={
+              `./posts/${post.name}`
+            }>{
+              post.title
+            }</a>
+          </li>
+        })
+      }
+    </ul>
+  </div>
+  return await renderToString(layout(jsx));
+}

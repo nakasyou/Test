@@ -1,0 +1,1 @@
+export default (ms:number):Primise<void>=>new Promise(resolve=>setTimeout(resolve,ms));
