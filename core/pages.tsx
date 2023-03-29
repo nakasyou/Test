@@ -24,7 +24,7 @@ export async function layout(children){
   </html>)
 }
 export async function post({ settings, html, file, yaml }: postArgs){
-  const letter=<div dangerouslySetInnerHTML={{
+  const letter=<div class="letter" dangerouslySetInnerHTML={{
     __html: html
   }} />;
   return layout(<div>
