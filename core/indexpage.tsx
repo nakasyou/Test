@@ -25,7 +25,7 @@ export default async function(){
   }
   await Promise.all(asyncs);
   datas.sort((a,b)=>(a.key<b.key) ? 1 : -1);
-  const jsx=<div class="center">
+  const jsx=<div class="post-list">
     <ul>
       {
         datas.map(post=>{
