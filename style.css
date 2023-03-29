@@ -43,6 +43,7 @@ html,body{
   }
   .icon {
     color: #fff;
+    filter: invert(100%);
   }
   .header {
     background-color: #444;
