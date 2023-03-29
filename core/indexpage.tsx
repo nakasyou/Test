@@ -23,8 +23,8 @@ export default async function(){
     if(!file.isFile)return;
     asyncs.push(dataplus(datas,file));
   }
-  data.sort((a,b)=>(a.key<b.key) ? 1 : -1);
   await Promise.all(asyncs);
+  data.sort((a,b)=>(a.key<b.key) ? 1 : -1);
   const jsx=<div>
     <ul>
       {
