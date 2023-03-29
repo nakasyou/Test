@@ -5,8 +5,8 @@ import { parse } from "https://deno.land/std/encoding/yaml.ts";
 
 export function getYml(md: string): Record<string, any> {
   md=md.replace("\r\n","\n");
-  
   const lines = md.split("\n");
+  console.log(lines)
   if (lines[0] !== "---") return {};
   const index = lines.slice(1).indexOf("---") + 1;
   if (index === 0) return {};
