@@ -35,3 +35,10 @@ html,body{
 .post-about{
   margin: 3px auto;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #15202B;
+    color: #fff;
+  }
+}
