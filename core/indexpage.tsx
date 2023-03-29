@@ -43,5 +43,5 @@ export default async function(){
       }
     </ul>
   </div>
-  return await renderToString(layout(jsx));
+  return await renderToString(layout(jsx,{ title: config.name }));
 }

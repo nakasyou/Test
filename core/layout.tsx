@@ -3,7 +3,7 @@
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
 
-export default function(children){
+export default function(children, {title}){
   return (<>
     <html>
       <head>

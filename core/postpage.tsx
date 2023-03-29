@@ -19,5 +19,5 @@ export default async function(c){
   return await renderToString(layout(<>
     <div>Published: {yaml.date}</div>
     {postjsx}
-  </>));
+  </>,{title: `${yaml.title} -${config.name}`}));
 }
