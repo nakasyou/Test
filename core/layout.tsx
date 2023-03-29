@@ -16,7 +16,7 @@ export default function(children, {title}){
           href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/base16/railscasts.min.css"/>
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        
+        <title>{title}</title>
         <link rel="stylesheet" href="/style.css"/>
       </head>
       <body>
