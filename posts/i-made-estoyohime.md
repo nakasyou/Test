@@ -1,6 +1,6 @@
 ---
-date: 2023-04-07
-key: 2023-04-07#0
+date: 2023-4-7
+key: 20230407#0
 title: esToyohimeっていうJavaScriptライブラリ生成器を作りました
 ---
 # esToyohimeっていうJavaScriptライブラリ生成器を作りました
