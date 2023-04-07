@@ -21,7 +21,9 @@ export default function(children, {title}){
         <link rel="stylesheet" href="/style.css"/>
       </head>
       <body>
-        <Header style="position:fixed"/>
+        <div style="position:fixed">
+          <Header/>
+        </div>
         <div style="height:2.5em"></div>
         {children}
       </body>
