@@ -1,4 +1,8 @@
-const Favicon = ()=> <>
+/** @jsx h */
+/** @jsxFrag Fragment */
+import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
+
+const Favicon = ()=>(<>
   <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png"/>
   <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png"/>
   <meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png"/>
@@ -43,8 +47,8 @@ const Favicon = ()=> <>
   <link rel="icon" type="image/png" sizes="24x24" href="/icon-24x24.png"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png"/>
   <link rel="manifest" href="/manifest.json"/>
-</>
-    
+</>)
+
 export default function(){
   return (<>
     <Favicon/>
