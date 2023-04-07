@@ -4,12 +4,13 @@ import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
 import Head from "./head.tsx";
 
-export default async function(children, {title}){
+export default async function(children, {title,description}){
   return await renderToString(<>
     <html lang="ja">
       <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content={description}/>
         <meta name="google-site-verification" content="ACaZWde-uW06btqxdWzZvgqHUw2T-27zvr8L89SI2z8" />
         <link rel="stylesheet" href="/style.css"/>
         <Head/>
