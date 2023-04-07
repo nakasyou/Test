@@ -21,8 +21,6 @@ html,body{
   vertical-align: bottom;
 }
 .auther-icon{
-  width: 48px;
-  height: 48px;
   object-fit: cover;
   border-radius:50%;
 }
