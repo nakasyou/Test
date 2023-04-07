@@ -25,7 +25,13 @@ export default async function(){
   }
   await Promise.all(asyncs);
   datas.sort((a,b)=>(a.key<b.key) ? 1 : -1);
-  const jsx=<div class="post-list">
+  const jsx=<>
+    <div class="desc">
+      <div class="center">
+      {config.desc}
+      </div>
+    </div>
+    <div class="post-list">
     <ul>
       {
         datas.map(post=>{
@@ -45,5 +51,6 @@ export default async function(){
       }
     </ul>
   </div>
+  </>
   return await renderToString(layout(jsx,{ title: config.name }));
 }
