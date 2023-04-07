@@ -21,6 +21,7 @@ export default async function(children, {title}){
           href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/base16/railscasts.min.css"/>
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        
         <title>{title}</title>
         <link rel="stylesheet" href="/style.css"/>
       </head>
@@ -33,6 +34,8 @@ export default async function(children, {title}){
         <div>
           &copy; 2023 nakasyou. All rights reserved. CC BY 4.0 LICENSE.
         </div>
+        <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+        <script>eruda.init();</script>
       </body>
     </html>
   </>)
