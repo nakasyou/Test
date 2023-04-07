@@ -50,6 +50,6 @@ html,body{
     filter: invert(100%);
   }
   .header {
-    background-color: #444;
+    background-color: #444444ee;
   }
 }
