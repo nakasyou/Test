@@ -22,7 +22,7 @@ export default function(children, {title}){
       </head>
       <body>
         <Header style="position:fixed"/>
-        <div style="height:3.5em"></div>
+        <div style="height:2.5em"></div>
         {children}
       </body>
     </html>
