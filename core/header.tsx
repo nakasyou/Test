@@ -10,7 +10,7 @@ export default function(){
     </div>
     <div class="" style="display: flex; flex-wrap: wrap; justify-content: center;">
       <div>
-        <img src={config.icon} class="auther-icon"/>
+        <img src={config.icon} class="auther-icon" alt="nakasyou"/>
       </div>
       <div>
         <div style="font-size:2em;">{config.auther}</div>
