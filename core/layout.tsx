@@ -26,6 +26,9 @@ export default function(children, {title}){
         </div>
         <div style="height:2.8em"></div>
         {children}
+        <div>
+          &copy; 2023 nakasyou. All rights reserved.
+        </div>
       </body>
     </html>
   </>)
