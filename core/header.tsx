@@ -4,7 +4,7 @@ import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import config from "../blagin.config.ts";
 
 export default function(){
-  return <div class="header">
+  return <div class="header" style="height:30px">
     <div class="center">
 
     </div>
