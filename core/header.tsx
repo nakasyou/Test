@@ -23,8 +23,5 @@ export default function(){
         })}
       </div>
     </div>
-    <div class="center">
-      {config.desc}
-    </div>
   </div>
 }
