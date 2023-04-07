@@ -2,6 +2,7 @@
 /** @jsxFrag Fragment */
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
+import Head from "./head.tsx";
 
 export default function(children, {title}){
   return (<>
@@ -10,6 +11,7 @@ export default function(children, {title}){
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="google-site-verification" content="ACaZWde-uW06btqxdWzZvgqHUw2T-27zvr8L89SI2z8" />
+        <Head/>
         <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
