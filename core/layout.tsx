@@ -5,7 +5,7 @@ import Header from "./header.tsx";
 import Head from "./head.tsx";
 
 export default async function(children, {title}){
-  return "<!doctype HTML>"+await renderToString(<>
+  return await renderToString(<>
     <html lang="ja">
       <head>
         <meta charset="UTF-8"/>
