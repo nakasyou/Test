@@ -24,7 +24,7 @@ export default function(children, {title}){
         <div style="position:fixed;width:100%;">
           <Header/>
         </div>
-        <div style="height:2.5em"></div>
+        <div style="height:2.7em"></div>
         {children}
       </body>
     </html>
