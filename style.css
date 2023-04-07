@@ -10,6 +10,7 @@ html,body{
 }
 .header{
   background-color: #ddddddee;
+  backdrop-filter: blur(30px);
 }
 .icon{
   width: 1.5em;
