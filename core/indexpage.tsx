@@ -52,5 +52,8 @@ export default async function(){
     </ul>
   </div>
   </>
-  return await layout(jsx,{ title: config.name });
+  return await layout(jsx,{
+    title: config.name,
+    description: "nakasyouのブログです。",
+  });
 }
