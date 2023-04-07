@@ -2,6 +2,16 @@
 /** @jsxFrag Fragment */
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 
+const Scripts = ()=>(<>
+  <script src="https://utteranc.es/client.js"
+        repo="nakasyou/nakasyou.deno.dev"
+        issue-term="pathname"
+        label="site-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
+</>)
 const Favicon = ()=>(<>
   <meta name="msapplication-square70x70logo" content="/site-tile-70x70.png"/>
   <meta name="msapplication-square150x150logo" content="/site-tile-150x150.png"/>
@@ -52,5 +62,6 @@ const Favicon = ()=>(<>
 export default function(){
   return (<>
     <Favicon/>
+    <Scripts/>
   </>)
 }
