@@ -16,10 +16,10 @@ export default async function(c){
   const postjsx=<div dangerouslySetInnerHTML={{
     __html: html
   }} />;
-  return await renderToString(layout(<>
+  return await layout(<>
     <div><a href="/" class="back-to-home">←&nbsp;Back</a></div>
     <div>Published: {yaml.date}</div>
     
     {postjsx}
-  </>,{title: `${yaml.title} -${config.name}`}));
+  </>,{title: `${yaml.title} -${config.name}`});
 }

@@ -4,8 +4,8 @@ import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
 import Head from "./head.tsx";
 
-export default function(children, {title}){
-  return (<>
+export default async function(children, {title}){
+  return await renderToString(<>
     <html lang="ja">
       <head>
         <meta charset="UTF-8"/>
