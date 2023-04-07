@@ -5,14 +5,13 @@ import Header from "./header.tsx";
 import Head from "./head.tsx";
 
 export default async function(children, {title}){
-  return "<!doctype HTML>"+await renderToString(<>
+  return await renderToString(<>
     <html lang="ja">
       <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="google-site-verification" content="ACaZWde-uW06btqxdWzZvgqHUw2T-27zvr8L89SI2z8" />
         <link rel="stylesheet" href="/style.css"/>
-        <style>@import url("/style.css");</style>
         <Head/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -32,8 +31,6 @@ export default async function(children, {title}){
         <div>
           &copy; 2023 nakasyou. All rights reserved. CC BY 4.0 LICENSE.
         </div>
-        <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-        <script>eruda.init();</script>
       </body>
     </html>
   </>)
