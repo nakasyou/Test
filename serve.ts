@@ -8,7 +8,7 @@ import sitemap from "./core/sitemap.ts";
 const app = new Hono();
 
 app.get('/sitemap',async c=>{
-  return c.body(sitemap());
+  return c.body(await sitemap());
 })
 app.get('/',async c=>{
   try{
