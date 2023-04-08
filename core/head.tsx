@@ -56,7 +56,7 @@ export function Head(){
   return (<>
     <Favicon/>
     <ImportantScripts/>
-    <style>{Deno.readTextFileSync("./style.css")}</style>
+    <style>{"sdd"}</style>
   </>)
 }
 export function SubFiles(){
