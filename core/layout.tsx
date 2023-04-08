@@ -6,7 +6,7 @@ import { Head, SubFiles } from "./head.tsx";
 
 
 export default async function(children, {title,description}){
-  return await renderToString(<>
+  return "<!doctype HTML>"+await renderToString(<>
     <html lang="ja">
       <head>
         <meta charset="UTF-8"/>
