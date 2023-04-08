@@ -33,9 +33,9 @@ export default async function(children, {title,description}){
         <SubFiles/>
         <script>
           const utterancesval = setInterval(()=>{
-            if(!document.querySelector("utterances")) return;
+            if(!document.querySelector(".utterances")) return;
             
-            const $utterances = document.querySelector("utterances")[0];
+            const $utterances = document.querySelector(".utterances");
             const $comment = document.getElementsByClassName("comment")[0];
             $comment.appendChild($utterances);
             clearInterval(utterancesval);
