@@ -2,6 +2,8 @@
 /** @jsxFrag Fragment */
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 
+const styleCSS = await Deno.readTextFile("./style.css");
+
 const ImportantScripts = ()=>(<>
 
 </>)
@@ -56,7 +58,7 @@ export function Head(){
   return (<>
     <Favicon/>
     <ImportantScripts/>
-    <style>{"sdd"}</style>
+    <style>{styleCSS}</style>
   </>)
 }
 export function SubFiles(){
