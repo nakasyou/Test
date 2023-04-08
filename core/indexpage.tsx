@@ -16,7 +16,7 @@ async function dataplus(datas,file){
     name: file.name.replace(".md",""),
   })
 }
-async function getPostDatas(){
+export async function getPostDatas(){
   const datas=[];
   const asyncs=[];
   for await (const file of expandGlob("./posts/*.md")){
