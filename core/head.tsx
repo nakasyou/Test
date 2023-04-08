@@ -56,6 +56,7 @@ export function Head(){
   return (<>
     <Favicon/>
     <ImportantScripts/>
+    <style>fff</style>
   </>)
 }
 export function SubFiles(){
