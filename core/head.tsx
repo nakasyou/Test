@@ -68,5 +68,7 @@ export function SubFiles(){
           crossorigin="anonymous"
           async>
     </script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </>)
 }
