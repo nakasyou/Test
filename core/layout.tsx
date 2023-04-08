@@ -26,6 +26,7 @@ export default async function(children, {title,description}){
         </div>
         <div style="height:2.8em"></div>
         {children}
+        <div class="utterances"></div>
         <div>
           &copy; 2023 nakasyou. All rights reserved. CC BY 4.0 LICENSE.
         </div>
