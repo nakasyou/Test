@@ -23,7 +23,7 @@ export default function(){
       <div>
         {config.links.map(link=>{
           return <a href={link.url}>
-            <img src={link.icon} alt={link.name} class="icon header-sns-icon"/>
+            <img src={link.icon} alt={link.name} class="icon header-sns-icon" width="27" height="27"/>
           </a>
         })}
       </div>
