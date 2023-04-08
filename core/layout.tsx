@@ -2,7 +2,7 @@
 /** @jsxFrag Fragment */
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
-import { Head } from "./head.tsx";
+import { Head, SubFiles } from "./head.tsx";
 
 export default async function(children, {title,description}){
   return await renderToString(<>
@@ -32,6 +32,7 @@ export default async function(children, {title,description}){
         <div>
           &copy; 2023 nakasyou. All rights reserved. CC BY 4.0 LICENSE.
         </div>
+        <SubFiles/>
       </body>
     </html>
   </>)
