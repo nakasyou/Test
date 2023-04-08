@@ -46,7 +46,7 @@ export default async function(){
               style="padding: 24px 0px;"
               >{
               post.title
-              }</a><br><span>{post.desc}</span>
+              }</a><br/><span>{post.desc}</span>
           </li>
         })
       }
