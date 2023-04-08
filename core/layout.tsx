@@ -31,16 +31,6 @@ export default async function(children, {title,description}){
           &copy; 2023 nakasyou. All rights reserved. CC BY 4.0 LICENSE.
         </div>
         <SubFiles/>
-        <script>
-          const utterancesval = setInterval(()=>{
-            if(!document.querySelector(".utterances")) return;
-            
-            const $utterances = document.querySelector(".utterances");
-            const $comment = document.getElementsByClassName("comment")[0];
-            $comment.appendChild($utterances);
-            clearInterval(utterancesval);
-          },100);
-        </script>
       </body>
     </html>
   </>)
