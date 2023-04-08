@@ -32,11 +32,14 @@ export default async function(children, {title,description}){
         </div>
         <SubFiles/>
         <script>
-          window.addEventListener("load",()=>{
-            const $utterances = document.getElementsByClassName("utterances")[0];
+          const utterancesval = setInterval(()=>{
+            if(!document.querySelector("utterances")) return;
+            
+            const $utterances = document.querySelector("utterances")[0];
             const $comment = document.getElementsByClassName("comment")[0];
             $comment.appendChild($utterances);
-          });
+            clearInterval(utterancesval);
+          },100);
         </script>
       </body>
     </html>
