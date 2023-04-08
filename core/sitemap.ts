@@ -1,4 +1,4 @@
-import { getPostDatas } from "./indexpage.ts";
+import { getPostDatas } from "./indexpage.tsx";
 //import { Sitemap } from "https://deno.land/x/deno_sitemap@0.1.2/mod.ts";
 
 export default async function(){
