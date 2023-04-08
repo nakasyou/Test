@@ -7,15 +7,12 @@ import sitemap from "./core/sitemap.ts";
 
 const app = new Hono();
 
-app.get('/sitemap',async c=>{
-  return c.body(await sitemap());
+app.get('/sitemap.xml',async c=>{
+  c.header('Content-Type', 'application/xml')
+  return c.body(await sitemap())
 })
 app.get('/',async c=>{
-  try{
-    return c.html(await indexpage());
-  }catch(e){
-    return c.text(e.stack)
-  }
+  return c.html(await indexpage())
 })
 app.get('/style.css', async c=>{
   return c.body(await Deno.readTextFile("./style.css"))
