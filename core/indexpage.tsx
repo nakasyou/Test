@@ -25,7 +25,7 @@ async function getPostDatas(){
   }
   await Promise.all(asyncs);
   datas.sort((a,b)=>(a.key<b.key) ? 1 : -1);
-  return data;
+  return datas;
 }
 export default async function(){
   const data = await getPostDatas();
