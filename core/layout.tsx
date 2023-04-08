@@ -26,11 +26,16 @@ export default async function(children, {title,description}){
         </div>
         <div style="height:2.8em"></div>
         {children}
-        <div class="utterances"></div>
+        <div class="comment"></div>
         <div>
           &copy; 2023 nakasyou. All rights reserved. CC BY 4.0 LICENSE.
         </div>
         <SubFiles/>
+        <script>
+          const $utterances = document.getElementsByClassName("utterances")[0];
+          const $comment = document.getElementsByClassName("comment")[0];
+          $comment.appendChild($utterances);
+        </script>
       </body>
     </html>
   </>)
