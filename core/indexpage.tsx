@@ -43,7 +43,7 @@ export default async function(){
               `./posts/${post.name}`
             }
               class="post-title"
-              style="padding: 10px 0px;"
+              style="padding: 24px 0px;"
               >{
               post.title
             }</a>
