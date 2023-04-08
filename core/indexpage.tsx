@@ -16,8 +16,7 @@ async function dataplus(datas,file){
     name: file.name.replace(".md",""),
   })
 }
-
-export default async function(){
+export async function getPostDatas(){
   const datas=[];
   const asyncs=[];
   for await (const file of expandGlob("./posts/*.md")){
@@ -26,6 +25,10 @@ export default async function(){
   }
   await Promise.all(asyncs);
   datas.sort((a,b)=>(a.key<b.key) ? 1 : -1);
+  return datas;
+}
+export default async function(){
+  const datas = await getPostDatas();
   const jsx=<>
     <div class="desc">
       <div class="center">
