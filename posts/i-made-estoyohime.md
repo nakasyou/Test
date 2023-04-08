@@ -2,7 +2,7 @@
 date: 2023-4-7
 key: 20230407#0
 title: esToyohimeっていうJavaScriptライブラリ生成器を作りました
-desc: 「esToyohime」というライブラリ生成器を作りました。バンドル処理には、[esbuild](https://esbuild.github.io)を使用しています。レポジトリ: https://github.com/nakasyou/esToyohime
+desc: 「esToyohime」というライブラリ生成器を作りました。バンドル処理には、esbuildを使用しています。
 ---
 # esToyohimeっていうJavaScriptライブラリ生成器を作りました
 
