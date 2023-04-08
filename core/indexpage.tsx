@@ -28,7 +28,7 @@ async function getPostDatas(){
   return datas;
 }
 export default async function(){
-  const data = await getPostDatas();
+  const datas = await getPostDatas();
   const jsx=<>
     <div class="desc">
       <div class="center">
