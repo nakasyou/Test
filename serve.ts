@@ -10,7 +10,7 @@ app.get('/',async c=>{
   try{
     return c.html(await indexpage());
   }catch(e){
-    return c.json({name:e.name,msg:e.message})
+    return c.json({name:e.name,msg:e.message,stack: e.stack})
   }
 })
 app.get('/style.css', async c=>{
