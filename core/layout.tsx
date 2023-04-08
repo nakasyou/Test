@@ -2,7 +2,7 @@
 /** @jsxFrag Fragment */
 import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
-import Head from "./head.tsx";
+import {Head} from "./head.tsx";
 
 export default async function(children, {title,description}){
   return await renderToString(<>
