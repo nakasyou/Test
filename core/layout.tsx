@@ -4,7 +4,6 @@ import { Fragment, h, renderToString } from "https://deno.land/x/jsx/mod.ts"
 import Header from "./header.tsx";
 import { Head, SubFiles } from "./head.tsx";
 
-const styleCSS = await Deno.readTextFile("./style.css");
 
 export default async function(children, {title,description}){
   return await renderToString(<>
