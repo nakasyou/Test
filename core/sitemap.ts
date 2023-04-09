@@ -7,7 +7,7 @@ export default async function(){
   // posts
   for(const post of (await getPostDatas())){
     sitemap.add(`/posts/${post.name}`,{
-      lastmod: post.lastmod
+      //lastmod: post.lastmod
     })
   }
   
