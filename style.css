@@ -8,7 +8,8 @@ body{
   font-family: sans-serif;
 }
 code{
-  color: pink;
+  color: mediumvioletred;
+  background-color: lightgray;
 }
 .letter{
   margin: 8px;
