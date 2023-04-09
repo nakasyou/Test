@@ -6,7 +6,9 @@ export default async function(){
   sitemap.add('/') // root
   // posts
   for(const post of (await getPostDatas())){
-    sitemap.add(`/posts/${post.name}`)
+    sitemap.add(`/posts/${post.name}`,{
+      lastmod: post.lastmod
+    })
   }
   
   return sitemap.sitemap;
