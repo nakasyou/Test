@@ -48,7 +48,7 @@ export default async function(){
                 </div>
                 <div>
                   <span>{post.desc}</span>
-                <div>
+                </div>
               </div>
             </a>
           </li>
