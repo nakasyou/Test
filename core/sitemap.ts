@@ -1,5 +1,5 @@
 import { getPostDatas } from "./indexpage.tsx";
-import { Sitemap } from "https://deno.land/x/deno_sitemap@0.1.2/mod.ts";
+import { Sitemap } from "https://deno.land/x/deno_sitemap@0.1.3/mod.ts";
 
 export default async function(){
   const sitemap = new Sitemap("https://nakasyou.deno.dev");
