@@ -3,7 +3,7 @@ date: 2023-4-8
 key: 20230408#1
 title: Denoの動的sitemap.xml生成器を作った
 desc: このブログには、sitemap.xmlがありませんでした。 正直、実装がめんどうでした。 なので、どうせ作るならライブラリを作ったほうが使い回しが効くということで、作りました。
-lastmod: 2023-4-9
+lastmod: 2023-04-09
 ---
 # Denoの動的sitemap.xml生成器を作った
 このブログには、`sitemap.xml`がありませんでした。
