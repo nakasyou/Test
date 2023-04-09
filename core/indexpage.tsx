@@ -9,15 +9,13 @@ import { getYml } from "./utils/markdown.ts";
 async function dataplus(datas,file){
   const text=await Deno.readTextFile(file.path);
   const { data }=getYml(text);
-  console.log(data)
-  console.log(data.lastmod)
   datas.push({
     date: data.date,
     title: data.title,
     key: data.key,
     name: file.name.replace(".md",""),
     desc: data.desc,
-    lastmod: data.lastmod,
+    lastmod: data.lastmod.toString(),
   })
 }
 export async function getPostDatas(){
