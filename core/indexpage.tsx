@@ -40,17 +40,17 @@ export default async function(){
       {
         datas.map(post=>{
           return <li class="post-about">
-            <span class="post-date">{
-              post.date
-            }</span>
-            <a href={
-              `./posts/${post.name}`
-            }
-              class="post-title"
-              style="padding: 24px 0px;"
-              >{
-              post.title
-              }</a><br/><span>{post.desc}</span>
+            <a href={`./posts/${post.name}`}>
+              <div>
+                <div>
+                  <span class="post-date">{post.date}</span>
+                  <span class="post-title">{post.title}</span>
+                </div>
+                <div>
+                  <span>{post.desc}</span>
+                <div>
+              </div>
+            </a>
           </li>
         })
       }
