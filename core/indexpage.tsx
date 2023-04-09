@@ -14,6 +14,7 @@ async function dataplus(datas,file){
     title: data.title,
     key: data.key,
     name: file.name.replace(".md",""),
+    desc: data.desc,
   })
 }
 export async function getPostDatas(){
