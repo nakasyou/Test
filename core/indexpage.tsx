@@ -44,10 +44,11 @@ export default async function(){
               <div>
                 <div>
                   <span class="post-date">{post.date}</span>
-                  <span class="post-title">{post.title}</span>
+                  <u><span class="post-title">{post.title}</span></u>
                 </div>
                 <div>
                   <span>{post.desc}</span>
+                  desc
                 </div>
               </div>
             </a>
