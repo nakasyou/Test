@@ -19,5 +19,5 @@ export default {
       name: "Element",
     },
   ],
-  desc: `プログラミングが大好きな中学1年生。東方Projectが好き。`
+  desc: `プログラミングが大好きな中学2年生。東方Projectが好き。`
 }
