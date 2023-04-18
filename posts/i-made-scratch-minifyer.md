@@ -1,7 +1,7 @@
 ---
 date: 2023-4-18
 key: 20230418#0
-title: esToyohimeっていうJavaScriptライブラリ生成器を作りましたScratchプロジェクト圧縮ツールを作ってみた
+title: Scratchプロジェクト圧縮ツールを作ってみた
 desc: Scratchプロジェクト圧縮ツールを作ってみた
 lastmod: 2023-04-18
 ---
