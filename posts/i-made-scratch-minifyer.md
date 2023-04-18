@@ -1,9 +1,9 @@
 ---
-date: 2023-4-7
-key: 20230407#0
-title: esToyohimeっていうJavaScriptライブラリ生成器を作りました
-desc: 「esToyohime」というライブラリ生成器を作りました。バンドル処理には、esbuildを使用しています。
-lastmod: 2023-04-09
+date: 2023-4-18
+key: 20230418#0
+title: esToyohimeっていうJavaScriptライブラリ生成器を作りましたScratchプロジェクト圧縮ツールを作ってみた
+desc: Scratchプロジェクト圧縮ツールを作ってみた
+lastmod: 2023-04-18
 ---
 # Scratchプロジェクト圧縮ツールを作ってみた
 Scratchプロジェクトのアップロード限界は、50MBです。これを超えると、保存できなくなります。
