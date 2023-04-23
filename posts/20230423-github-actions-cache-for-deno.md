@@ -1,5 +1,5 @@
 ---
-date: 2023-4-23
+date: 2023-04-23
 key: 20230423#0
 title: GitHub Actionsで、Denoのモジュールをキャッシュする
 desc: GitHub ActionsでCI/CDをするとき、Denoプロジェクトが大きくなってくると、Denoモジュールのダウンロード時間が長くなってしまいます。すると、当然、Actionsの時間が長くなってしまいます。npmのキャッシュのように、Denoもキャッシュできたらなと思ったので、書きました。
